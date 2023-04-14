@@ -329,7 +329,7 @@ Memories will be available to the AI immediately as they are ingested, even if i
 In the example above, the script initializes the memory, ingests all files within the seed_data directory into memory with an overlap between chunks of 200 and a maximum length of each chunk of 4000.
 Note that you can also use the --file argument to ingest a single file into memory and that the script will only ingest files within the auto_gpt_workspace directory.
 
-You can adjust the max_length and overlap parameters to fine-tune the way the docuents are presented to the AI when it "recall" that memory:
+You can adjust the max_length and overlap parameters to fine-tune the way the documents are presented to the AI when it "recall" that memory:
 
 - Adjusting the overlap value allows the AI to access more contextual information from each chunk when recalling information, but will result in more chunks being created and therefore increase memory backend usage and OpenAI API requests.
 - Reducing the max_length value will create more chunks, which can save prompt tokens by allowing for more message history in the context, but will also increase the number of chunks.
@@ -337,7 +337,7 @@ You can adjust the max_length and overlap parameters to fine-tune the way the do
 
 ## 💀 Continuous Mode ⚠️
 
-Run the AI **without** user authorisation, 100% automated.
+Run the AI **without** user authorization, 100% automated.
 Continuous mode is not recommended.
 It is potentially dangerous and may cause your AI to run forever or carry out actions you would not usually authorise.
 Use at your own risk.
